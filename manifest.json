@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "version": "1.0",
+  "name": "Bluesky Emoji",
+  "description": "This is a description that adds Discord-style emoji completion to Bluesky.",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://bsky.app/",
+        "*://bsky.app/*",
+        "*://*.bsky.app/",
+        "*://*.bsky.app/*"
+      ],
+      "js": [
+        "scripts/emoji_names.js",
+        "scripts/get_suggestion.js",
+        "scripts/insert_emoji.js",
+        "scripts/content.js"
+      ],
+      "css": ["scripts/suggestions_popup.css"]
+    }
+  ],
+  "permissions": ["activeTab"]
+}

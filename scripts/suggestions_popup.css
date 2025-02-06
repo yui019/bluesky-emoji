@@ -1,0 +1,44 @@
+#bluesky-emojis-extension-suggestions-popup {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+
+  min-width: 10rem;
+  min-height: 2rem;
+  max-height: 10rem;
+
+  display: flex;
+  flex-direction: column;
+
+  /* able to scroll but no visible scrollbar */
+  overflow-y: auto;
+  scrollbar-width: none;
+
+  padding: 0;
+  margin: 0;
+}
+
+#bluesky-emojis-extension-suggestions-popup > div {
+  padding: 8px 4px;
+  margin: 0;
+
+  color: black;
+}
+
+#bluesky-emojis-extension-suggestions-popup > div:hover {
+  cursor: pointer;
+  background-color: rgb(220, 220, 220);
+}
+
+#bluesky-emojis-extension-suggestions-popup > div.highlighted {
+  background-color: rgb(200, 200, 200);
+}
+
+.bluesky-emojis-extension-suggestions-popup-invisible {
+  display: none !important;
+}
