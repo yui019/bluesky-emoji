@@ -77,7 +77,11 @@ function fillSuggestionsPopup(suggestions) {
         let element = document.createElement("div");
         element.innerHTML = `${emoji} <span>:${name}:</span>`;
 
-        element.addEventListener("click", () => {
+        // Doing a mousedown and preventDefault ensures the element won't steal
+        // focus from the ProseMirror when it's clicked on
+        element.addEventListener("mousedown", (event) => {
+            event.preventDefault();
+
             insertEmoji(ProseMirror, emoji);
             hideSuggestionsPopup();
             currentlyTypingEmoji = false;
