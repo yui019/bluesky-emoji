@@ -4,8 +4,6 @@
  * @param {string} emoji 
  */
 function insertEmoji(ProseMirror, emoji) {
-    console.log("Inserting ", emoji)
-
     // Get selection range
     const selection = window.getSelection();
     const range = selection.getRangeAt(0).cloneRange();
@@ -28,8 +26,6 @@ function insertEmoji(ProseMirror, emoji) {
     // Get substrings before and after the place where the emoji will be placed
     const textBeforeEmoji = lineElement.innerHTML.substr(0, colonIndex)
     const textAfterEmoji = lineElement.innerHTML.substr(range.endOffset, lineElement.innerHTML.length)
-
-    console.log(window.getSelection());
 
     // Combine substrings and emoji
     lineElement.innerHTML = textBeforeEmoji + emoji + textAfterEmoji;
