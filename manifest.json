@@ -28,7 +28,6 @@
       "css": ["scripts/suggestions_popup.css"]
     }
   ],
-  "permissions": ["activeTab"],
   "browser_specific_settings": {
     "gecko": {
       "id": "bluesky_emoji@yui36189",
