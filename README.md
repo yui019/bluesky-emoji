@@ -2,6 +2,11 @@
 
 This is a browser extension that adds Discord-style emoji completion to Bluesky.
 
+Links:
+
+- [Chrome Web Store](https://chromewebstore.google.com/detail/bluesky-emoji/balijppaamjmdlgeliadigmagncoamaa)
+- [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/bluesky-emoji)
+
 ![Showcase GIF](showcase.gif)
 
 ## Small note
